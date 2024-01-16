@@ -8,7 +8,7 @@ class CarCard extends StatelessWidget {
     return Center(
       child: Card(
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           margin: const EdgeInsets.only(bottom: 15),
           width: double.infinity,
           height: 250,
@@ -16,7 +16,8 @@ class CarCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Row(
-                children: [Text('Hola')],
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text('Hola'), Text('Hola')],
               ),
               Image.network(
                 'https://s1.cdn.autoevolution.com/images/news/gallery/2007-ford-mustang-saleen-parnelli-jones-no-001-surfaces-a-car-for-the-ages_15.jpg',
@@ -24,7 +25,9 @@ class CarCard extends StatelessWidget {
                 height: 200,
                 fit: BoxFit.cover,
               ),
-              const Row()
+              const Row(
+                children: [Text('Texto'), Text('data')],
+              )
             ],
           ),
         ),

@@ -8,9 +8,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: (Padding(
-      padding: EdgeInsets.only(top: 60.0),
+      padding: const EdgeInsets.only(top: 60.0),
       child: ListView(
-        children: [CarCard()],
+        children: const [
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: CarCard(),
+          )
+        ],
       ),
     )));
   }
