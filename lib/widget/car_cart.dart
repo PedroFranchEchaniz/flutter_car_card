@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_5/screen/info.dart';
 
 class CarCard extends StatelessWidget {
   const CarCard({super.key});
@@ -25,8 +26,38 @@ class CarCard extends StatelessWidget {
                 height: 200,
                 fit: BoxFit.cover,
               ),
-              const Row(
-                children: [Icon(Icons.vignette), Text('data')],
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Column(
+                    children: [
+                      Text('COCHARDO'),
+                      Row(
+                        children: [
+                          Icon(Icons.vignette),
+                          Icon(Icons.abc),
+                          Icon(Icons.zoom_out_sharp),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text('Precio'),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SecondRoute()),
+                          );
+                        },
+                        child: const Text('Info'),
+                      ),
+                    ],
+                  )
+                ],
               )
             ],
           ),
