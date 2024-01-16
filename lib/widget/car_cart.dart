@@ -20,13 +20,13 @@ class CarCard extends StatelessWidget {
                 children: [Text('Hola'), Text('Hola')],
               ),
               Image.network(
-                'https://s1.cdn.autoevolution.com/images/news/gallery/2007-ford-mustang-saleen-parnelli-jones-no-001-surfaces-a-car-for-the-ages_15.jpg',
+                'https://img.freepik.com/psd-premium/coche-moderno-sobre-fondo-transparente-representacion-3d-ilustracion_494250-31500.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705363200&semt=ais',
                 width: double.infinity,
                 height: 200,
                 fit: BoxFit.cover,
               ),
               const Row(
-                children: [Text('Texto'), Text('data')],
+                children: [Icon(Icons.vignette), Text('data')],
               )
             ],
           ),
