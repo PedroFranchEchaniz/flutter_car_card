@@ -14,7 +14,9 @@ class Home extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(8.0),
             child: CarCard(),
-          )
+          ),
+          Padding(padding: EdgeInsets.all(8.0), child: CarCard()),
+          Padding(padding: EdgeInsets.all(8.0), child: CarCard())
         ],
       ),
     )));

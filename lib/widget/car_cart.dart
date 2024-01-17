@@ -12,7 +12,7 @@ class CarCard extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           margin: const EdgeInsets.only(bottom: 15),
           width: double.infinity,
-          height: 250,
+          height: 300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -23,7 +23,7 @@ class CarCard extends StatelessWidget {
               Image.network(
                 'https://img.freepik.com/psd-premium/coche-moderno-sobre-fondo-transparente-representacion-3d-ilustracion_494250-31500.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705363200&semt=ais',
                 width: double.infinity,
-                height: 200,
+                height: 150,
                 fit: BoxFit.cover,
               ),
               Column(
@@ -40,6 +40,9 @@ class CarCard extends StatelessWidget {
                         ],
                       ),
                     ],
+                  ),
+                  const Divider(
+                    color: Colors.black12,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
